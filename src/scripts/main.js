@@ -1,5 +1,5 @@
-import { createPlan } from "./plan"
-import { plantSeeds } from "./tractor"
+import { createPlan } from "./plan.js"
+import { plantSeeds } from "./tractor.js"
 
 console.log("Welcome to the main module")
 
