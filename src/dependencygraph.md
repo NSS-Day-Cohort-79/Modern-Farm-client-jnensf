@@ -4,6 +4,8 @@ graph TD;
 Main.js-->Plan.js
 Main.js-->Tractor.js
 Main.js-->Harvester.js
+Main.js-->Field.js
+Main.js-->Catalog.js
 Tractor.js-->Corn.js
 Tractor.js-->Asparagus.js
 Tractor.js-->Potato.js
