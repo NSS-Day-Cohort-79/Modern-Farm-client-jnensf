@@ -39,16 +39,15 @@ h6 {
     background-color: darksalmon;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+#container {
+    background-color: lightyellow;
 }
 
-.messages {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+.container--crops {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
     padding: 20px;
+    gap: 20px;
 }

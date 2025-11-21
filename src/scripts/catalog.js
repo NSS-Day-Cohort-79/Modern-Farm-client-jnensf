@@ -1,12 +1,12 @@
 export const getCatalogHTML = (harvest) => {
-    let catalogHTML = `<ul class="container--crops">`
+    let catalogHTML = `<div class="container--crops">`
 
     for (const h of harvest) {
         catalogHTML += `
-        <li class="crop">${h.type}</li>
+        <p class="crop">${h.type}</p>
         `
     }
 
-    catalogHTML += `</ul>`
+    catalogHTML += `</div>`
     return catalogHTML;
 }
