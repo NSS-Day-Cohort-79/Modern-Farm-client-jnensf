@@ -1,4 +1,4 @@
-export const catalog = (harvest) => {
+export const getCatalogHTML = (harvest) => {
     let catalogHTML = `<ul class="container--crops">`
 
     for (const h of harvest) {

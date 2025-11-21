@@ -3,6 +3,7 @@ import { plantSeeds } from "./tractor.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { addPlant, usePlants } from "./field.js"
 import { harvestPlants } from "./harvester.js"
+import { getCatalogHTML } from "./catalog.js"
 
 console.log("Welcome to the main module")
 
@@ -30,3 +31,18 @@ console.log(getPlantsFields)
 // harvest
 const harvest = harvestPlants(getPlantsFields)
 console.log(harvest)
+
+const catalogHTML = getCatalogHTML(harvest)
+// console.log(catalogHTML)
+
+const renderCatalogToDOM = (catalogHTML) => {
+    const container = document.getElementById('container')
+
+    if (container) {
+        container.innerHTML = catalogHTML;
+    } else {
+        console.error("Could not find element with class container")
+    }
+}
+
+renderCatalogToDOM(catalogHTML)
