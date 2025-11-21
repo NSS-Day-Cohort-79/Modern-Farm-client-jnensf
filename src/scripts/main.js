@@ -3,6 +3,8 @@ import { plantSeeds } from "./tractor.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { addPlant, usePlants } from "./field.js"
 import { harvestPlants } from "./harvester.js"
+import { getCatalogHTML } from "./catalog.js"
+import { renderCatalogToDOM } from "./render.js"
 
 console.log("Welcome to the main module")
 
@@ -30,3 +32,8 @@ console.log(getPlantsFields)
 // harvest
 const harvest = harvestPlants(getPlantsFields)
 console.log(harvest)
+
+const catalogHTML = getCatalogHTML(harvest)
+// console.log(catalogHTML)
+
+renderCatalogToDOM(catalogHTML)
