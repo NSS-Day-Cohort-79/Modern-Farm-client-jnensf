@@ -2,6 +2,7 @@ import { createPlan } from "./plan.js"
 import { plantSeeds } from "./tractor.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { addPlant, usePlants } from "./field.js"
+import { harvestPlants } from "./harvester.js"
 
 console.log("Welcome to the main module")
 
@@ -25,3 +26,7 @@ plantSeeds(yearlyPlan)
 // invoke use seeds from field
 const getPlantsFields = usePlants()
 console.log(getPlantsFields)
+
+// harvest
+const harvest = harvestPlants(getPlantsFields)
+console.log(harvest)
